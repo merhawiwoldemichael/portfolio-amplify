@@ -1,0 +1,391 @@
+body {
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: black;
+	font-family: Verdama, Helvetica, Arial, serif;
+	font-size: 1.75em;
+	font-weight: 100;
+	text-shadow: 1px 1px black;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	font-weight: 100;
+	text-shadow: 2px 2px black;
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+h4 {
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+
+/* end of main */
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #58ACFA;
+	text-shadow: 3px 2px black;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+	color: #58ACFA;
+	text-shadow: 3px 2px black;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	text-shadow: 3px 2px black;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	transition: color 600ms;
+	-webkit-transition: color 600ms;
+}
+
+.projectName {
+	text-transform: uppercase;
+	text-shadow: 3px 2px black;
+}
+
+.projectName a:hover {
+	color: #58ACFA;
+	text-shadow: 2px 2px black;
+}
+
+.projectName a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	transition: color 600ms;
+	-webkit-transition: color 600ms;
+}
+
+
+/* end of nav bar */
+
+
+/* expands carousel to edges of page */
+
+#carosel-container {
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+.carousel-caption {
+	margin-left: -20%;
+	margin-right: -20%;
+	margin-bottom: -1.5em;
+	padding: 0;
+	margin-bottom: 18%;
+	color: black;
+}
+
+.carousel h1 {
+	padding-bottom: 0%;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 5%;
+}
+
+.carousel h2 {
+	padding-bottom: 0%;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+	margin-bottom: 5%;
+	margin-top: 0;
+}
+
+.carousel-inner>.item>img {
+	height: 700px;
+	width: 100%;
+}
+
+.carousel-inner {
+	width: 100%;
+}
+
+.navbar {
+	height: 50px;
+	background-color: silver;
+	color: white;
+}
+
+.btn-primary {
+	background-color: transparent;
+	color: black;
+	text-transform: uppercase;
+}
+
+.modal-button {
+	position: fixed;
+	float: right;
+	padding-left: 600px;
+	padding-top: 40px;
+}
+
+#carousel-example-generic {
+	padding-top: 50px;
+}
+
+.carousel .item {
+	height: 700px;
+}
+
+.carousel {
+	padding-top: 50px;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.nav {
+	z-index: 1;
+}
+
+.projectName-avbar-brand {
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.projectName-avbar-brand a {
+	color: white;
+}
+
+h2 {
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+
+/*<!-----indexendhere----->*/
+
+
+/*<!----aboutpage----->*/
+
+#about {
+	padding-top: 50px;
+	margin-top: 30px;
+}
+
+#about {
+	color: black;
+}
+
+.panel-heading {
+	padding: 0;
+}
+
+.panel-heading a {
+	padding: 10px 15px;
+	font-size: 25px;
+	font-style: normal;
+	font-family: serif;
+	height: 25px;
+}
+
+.image img {
+	width: 100%;
+}
+
+
+/*<!----aboutendshere---->*/
+
+
+/*workpage*/
+
+#works {
+	padding-top: 40px;
+}
+
+.img-responsive {
+	margin-bottom: 10px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	display: block;
+}
+
+.row1 img {
+	display: block;
+	margin-bottom: 10px;
+	max-width: 200px;
+	position: relative;
+	padding: 10px;
+}
+
+.work-img {
+	display: block;
+	margin: auto;
+	max-width: 200px;
+	position: relative;
+	top: 15%;
+}
+
+#worked {
+	background-image: url("../img/pim.jpg");
+	width: 800px;
+	font-family: serif;
+}
+
+#worked h2 {
+	text-align: left;
+}
+
+.info {
+	position: absolute;
+	top: 15%;
+	left: 22%;
+	font-family: Futura;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.5em;
+	line-height: 1.6;
+	display: none;
+}
+
+.proj-title {
+	font-weight: 100;
+}
+
+
+/*work end here*/
+
+
+/*contacts page*/
+
+#map {
+	height: 430px;
+	width: 470px;
+}
+
+#contacts {
+	padding-top: 50px;
+	height: 800px;
+	margin-top: 30%;
+	padding-bottom: 100px;
+	background-attachment: fixed;
+	background-size: cover;
+	color: black;
+	height: 800px;
+}
+
+label {
+	color: white;
+}
+
+.email p {
+	font-family: fantasy, cursive, sans-serif;
+	text-align: center;
+}
+
+.phone p {
+	font-family: fantasy, cursive, sans-serif;
+	text-align: center;
+}
+
+.address p {
+	font-family: fantasy, cursive, sans-serif;
+	text-align: center;
+}
+
+.hed h1 {
+	text-align: center;
+	font-style: italic;
+	font-family: fantasy;
+	font-weight: bolder;
+	color: white;
+}
+
+
+/*  <!----faqspage--->*/
+
+#sr {
+	padding-top: 10px;
+}
+
+.learn-more h2 {
+	float: left;
+}
+
+.learn-more {
+	padding-bottom: 25px;
+}
+
+
+
+.raw {
+	padding-bottom: 45px;
+	margin-right: 5px;
+}
+
+#modalembed {
+	height: 500px;
+	width: 100%;
+	padding: 10px;
+}
+
+.panel-heading {
+	padding: 0;
+}
+
+.panel-heading a {
+	padding: 10px 15px;
+	font-size: 25px;
+	font-style: normal;
+	font-family: serif;
+	height: 25px;
+	color: black;
+}
+
+#faqs {
+	height: 800px;
+	padding-top: 50px;
+}
+
+.panel-default {
+	background-color: white;
+}
+
+.panel-title {
+	background-color: white;
+	font-weight: bold;
+}
+
+
+/*<!----faqsendshere----->*/
+
+footer {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	text-align: center;
+	color: black;
+	border-top: 1px solid white;
+	background-color: silver;
+	height: 20px;
+	width: 100%;
+}
+
+.footer .container {
+	justify-content: flex-end;
+	align-items: center;
+	display: inline-flex
+}
+
+.footer .fb-like {
+	margin-right: 10px;
+}
+
+.footer-element {
+	font-family: sans-serif;
+	margin-left: 10px;
+}
+
+.embed-responsive-16by9 {
+	margin-bottom: 60px;
+	margin-top: 15px;
+}
