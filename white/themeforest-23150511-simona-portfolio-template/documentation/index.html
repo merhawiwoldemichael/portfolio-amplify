@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta name="description"
+      content="Nice and creative portfolio template. Fully responsive with cool animations">
+<meta name="keywords"
+      content="agency, bootstrap 4, creative, flexbox, jquery, minimalist, motion design, onepage, photography, portfolio, product, responsive, studio, video">
+
+<title>Simona - Creative Portfolio Template</title>
+<!-- Framework CSS -->
+<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+<link rel="shortcut icon" type="image/icon" href="../resources/images/favicon.ico"/>
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css"
+      media="screen, projection">
+<style type="text/css" media="screen">
+    p, table, hr, .box {
+        margin-bottom: 25px;
+    }
+
+    .box p {
+        margin-bottom: 10px;
+    }
+</style>
+<!-- Syntax Highlighter -->
+<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+</head>
+<body>
+<div class="container">
+
+    <h1 class="center">DOCUMENTATION</h1>
+
+    <div class="borderTop">
+        <div class="span-6 colborder info prepend-1 aa-top">
+            <p><span>Email :</span> <a href="mailto:lifeinsys@gmail.com">lifeinsys@gmail.com</a></p>
+        </div><!-- end div .span-6 -->
+
+        <div class="span-12 last">
+            <p class="prepend-top append-0">Thank you for downloading our Template. If you have any questions that are
+                beyond the scope of this help file, please contact with us vie email. Thanks so much!</p>
+        </div>
+    </div><!-- end div .borderTop -->
+
+    <hr>
+
+    <h2 id="toc" class="alt">Contents</h2>
+    <ol class="alpha">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#htmlStructure">HTML Structure</a></li>
+        <li><a href="#cssFiles">CSS Files and Structure</a></li>
+        <li><a href="#javascript">JavaScripts</a></li>
+        <li><a href="#navlogo">Navigation and Logos</a></li>
+        <!-- <li><a href="#psdFiles">PSD Files</a></li> -->
+        <li><a href="#fontssused">Fonts used</a></li>
+        <li><a href="#credits">Images Source</a></li>
+
+    </ol>
+
+    <hr>
+
+    <h3 id="introduction"><strong>A) Introduction</strong> - <a href="#toc">top</a></h3>
+
+    <p>Thank you so much for downloading this template called <strong>Simona - Portfolio Template</strong>.
+        Please feel free to contact us if you have question or problem about this template. No guarantees, but we will
+        do our best to provide you with the best possible assistance.</p>
+
+    <h4>Template Features</h4>
+    <ul>
+        <li>HTML5 and CSS3 Validated</li>
+        <li>Responsive Template</li>
+        <li>Built on Bootstrap 4</li>
+        <li>Based on FontAwesome</li>
+        <li>8 Demo Version</li>
+    </ul>
+
+    <hr>
+
+    <h3 id="htmlStructure"><strong>B) HTML Structure</strong> - <a href="#toc">top</a></h3>
+
+    <h4>HTML Files</h4>
+    <p>Total 9 HTML file included in this Template. These are index.html</p>
+
+    <h4>Here just Home "index.html" HTML structure</h4>
+    <p>This template is a Bootstrap based responsive layout and index.html file seperated by sections. Here is the
+        general structure.</p>
+
+    <pre class="brush: html">
+<div id="wrapper">
+	<div class="preloader"></div>
+
+    <!--HEADER START-->
+	<header id="header"></header><!--/#header-->
+    <!--HEADER END-->
+
+	<div class="wrapper-background" style="background-image:url(images/wrapper-bg.jpg);"></div>
+
+    <!--MAIN SECTION START-->
+	<div id="fullpage" class="fullpage-default"></div><!--/#main-->
+    <!--MAIN SECTION END-->
+
+    <!--FOOTER START-->
+	<footer id="footer"></footer><!--#/footer-->
+    <!--FOOTER END-->
+</div>
+        </pre>
+
+    <hr>
+
+    <h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+    <h4>Styles</h4>
+
+    <pre class="brush: html">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<!-- fullpage CSS -->
+<link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+<!-- slider CSS -->
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<!-- Animations CSS -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Style CSS -->
+<link rel="stylesheet" href="css/style.css">
+        </pre>
+
+    <p>We're using 7 core CSS files in this template. we have separated styles for improving convenience to edit this
+        template. If you're going to use this template in production we recommend you merge all stylesheets in one file
+        (for decreasing http queries).</p>
+
+    <p>Lets take a look closely at our stylesheet files.</p>
+
+    <h5>bootstrap.min.css</h5>
+    <p>This Stylesheet contains responsive grid system, default element style based on <a
+            href="http://getbootstrap.com/">bootstrap</a>. It is bootstrap framework main css file.</p>
+
+    <h5>font-awesome.css</h5>
+    <p>Base styles for <a href="https://fontawesome.com/">FontAwesome</a> icon fonts.</p>
+
+    <h5>fullpage.min.css</h5>
+    <p>Use for scrolling.</p>
+
+    <h5>owl.carousel.css</h5>
+    <p>Use for sliders</p>
+
+    <h5>animate.css</h5>
+    <p>Use for blocks animation</p>
+
+    <h5>style.css</h5>
+    <p>Main css file where you can do own customization</p>
+
+    <p>Main style.css structure</p>
+    <pre class="brush: css">
+
+/*-----------------------------------------------------------------
+[Legal Notice]
+
+Copyright (c) LifeInSYS
+Website Template by LifeInSYS
+http://lifeinsys.com
+-------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------
+Table of contents
+    01. BASE STYLE
+	02. HEADER
+	03. FOOTER
+	04. WELCOME
+	05. ABOUT
+	06. SERVICES
+	07. PROJECT
+	08. CONTACT
+	09. TESTIMONOALS
+	10. SKILLS
+	11.	PROJECT DETAILS
+	12. INDEX BACKGROUNDS
+	13. INDEX GRADIENTS
+	14. INDEX SLIDESHOW
+	15. INDEX WHITE
+	16. INDEX DARK
+	17. INDEX SLIDESHOW
+	18. SIDEMENU
+	19. RESPONSIVE
+-------------------------------------------------------------------*/
+
+        </pre>
+
+    <hr>
+
+    <h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+
+    <p>This template imports 10 Javascript files.</p>
+
+    <pre class="brush: html">
+<!-- jQuery Library File -->
+<script src="js/jquery.js"></script>
+<!-- Latest Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Fullpage js -->
+<script src="js/fullpage.min.js"></script>
+<!-- Enable scrollbar when more content js -->
+<script src="js/scrolloverflow.js"></script>
+<!-- slider js -->
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.inview.min.js"></script>
+<!-- Particles JS -->
+<script src="js/particles.min.js"></script>
+<script src="js/particles-init.js"></script>
+<!-- Main Script -->
+<script src="js/custom.js"></script>
+        </pre>
+
+    <p>Lets take a look closely at our javascript files.</p>
+
+    <h5>jquery.js</h5>
+    <p>Initialize jQuery Library</p>
+
+    <h5>bootstrap.min.js</h5>
+    <p>Initialize Bootstrap Library</p>
+
+    <h5>fullpage.min.js</h5>
+    <p>One page scrolling section Library</p>
+
+    <h5>owl.carousel.min.js</h5>
+    <p>Carousel slider Library</p>
+
+    <h5>jquery.inview.min.js</h5>
+    <p>Detecting when an element is scrolled Library</p>
+
+    <h5>particles.min.js</h5>
+    <p>For particles demo version</p>
+
+    <h5>particles-init.js</h5>
+    <p>FoInitializer particles</p>
+
+    <h5>custom.js</h5>
+    <p>Main javascript file</p>
+
+    <hr>
+
+    <h3 id="navlogo"><strong>E) Navigation and Logos</strong> - <a href="#toc">top</a></h3>
+
+    <P>Menu will show different view for desktop and mobile device.</P>
+    <p>The Logo is nested within a tag with ID of <strong>logo</strong>.
+
+    <hr>
+
+    <h3 id="fontssused"><strong>F) Fonts Used</strong> - <a href="#toc">top</a></h3>
+
+    <ol>
+        <li><em> Open Sans</em></li>
+        <li><em> Montserrat</em></li>
+    </ol>
+    <br/>
+
+    <hr>
+
+
+    <h3 id="credits"><strong>G) Images Source</strong> - <a href="#toc">top</a></h3>
+
+    <p>Image by <a href="https://pixabay.com/en/">pixabay.com</a> , <a href="https://unsplash.com">unsplash.com</a></p>
+
+    <hr>
+
+    <p>Pictures of demo version not included in source and if you want download whole pictures which template use on
+        demo version, you can download it from this link` <a href="lifeinsys.com/item/simona/images.zip"
+                                                             target="_blank">DOWNLOAD DEMO IMAGES</a></p>
+    <p>Once again, thank you so much for Downloading this item. As we said at the beginning, we would be glad to help
+        you if you have any questions relating to this item.</p>
+
+    <p><a href="#toc">Go To Table of Contents</a></p>
+
+    <hr class="space">
+</div><!-- end div .container -->
+
+
+<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script>
+<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script>
+<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script>
+<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.all()
+</script>
+</body>
+</html>
