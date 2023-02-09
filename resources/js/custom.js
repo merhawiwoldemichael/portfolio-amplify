@@ -155,7 +155,8 @@
             // Submit the form using AJAX.
             $.ajax({
                 type: 'POST',
-                url: $(form).attr('action'),
+                //url: $(form).attr('action'),
+                url: "https://rit0opg268.execute-api.us-east-1.amazonaws.com/dev/contact",
                 data: formData
             })
                 .done(function (response) {
