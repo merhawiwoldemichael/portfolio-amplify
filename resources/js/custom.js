@@ -140,6 +140,7 @@
         /*------------------CONTACT FORM------------------*/
         // Get the form.
         var form = $('#ajax-contact');
+        
 
         // Get the messages div.
         var formMessages = $('#form-messages');
@@ -152,14 +153,29 @@
             // Serialize the form data.
             var formData = $(form).serialize();
 
+            console.log(formData.name);
+
             // Submit the form using AJAX.
-            $.ajax({
-                type: 'POST',
-                //url: $(form).attr('action'),
-                url: "https://rit0opg268.execute-api.us-east-1.amazonaws.com/dev/contact",
-                data: formData
+            // $.ajax({
+            //     mode: 'no-cors',
+            //     type: 'POST',
+            //     header: {
+            //         'Content-Type': 'spplication/json'
+            //     },
+            //     //url: $(form).attr('action'),
+            //     url: "https://jl2n92px5m.execute-api.us-east-1.amazonaws.com/dev/contact",
+            //     data: formData
+            // })
+            fetch("https://jl2n92px5m.execute-api.us-east-1.amazonaws.com/dev/contact", {
+                mode:'no-cors',
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'spplication/json'
+                },
+                body: JSON.stringify(formData)
             })
-                .done(function (response) {
+                .then(function (response) {
                     // Make sure that the formMessages div has the 'success' class.
                     $(formMessages).removeClass('bg-danger');
                     $(formMessages).addClass('bg-success');
@@ -170,7 +186,7 @@
                     // Clear the form.
                     $('#name, #email, #message').val('');
                 })
-                .fail(function (data) {
+                .error(function (data) {
                     // Make sure that the formMessages div has the 'error' class.
                     $(formMessages).removeClass('bg-success');
                     $(formMessages).addClass('bg-danger');
