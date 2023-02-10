@@ -176,6 +176,8 @@
                 body: JSON.stringify(formData)
             })
                 .then(function (response) {
+                    console.log('Message sent ---------')
+                    console.log(JSON.stringify(formData));
                     // Make sure that the formMessages div has the 'success' class.
                     $(formMessages).removeClass('bg-danger');
                     $(formMessages).addClass('bg-success');
